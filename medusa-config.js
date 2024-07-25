@@ -3,6 +3,10 @@ import { defineConfig, loadEnv } from "@medusajs/utils";
 loadEnv(process.env.NODE_ENV, process.cwd());
 
 module.exports = defineConfig({
+  admin: {
+    backendUrl: process.env.BACKEND_URL,
+    path: process.env.ADMIN_PATH,
+  },
   projectConfig: {
     databaseUrl: process.env.DATABASE_URL,
     http: {
