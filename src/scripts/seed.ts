@@ -13,7 +13,7 @@ import {
   updateStoresWorkflow,
 } from "@medusajs/core-flows";
 import { Logger } from "@medusajs/medusa";
-import { ModuleRegistrationName, RemoteLink } from "@medusajs/modules-sdk";
+import { RemoteLink } from "@medusajs/modules-sdk";
 import {
   ExecArgs,
   IFulfillmentModuleService,
@@ -22,6 +22,7 @@ import {
 } from "@medusajs/types";
 import {
   ContainerRegistrationKeys,
+  ModuleRegistrationName,
   Modules,
   ProductStatus,
 } from "@medusajs/utils";
@@ -121,7 +122,7 @@ export default async function seedDemoData({ container }: ExecArgs) {
 
   const fulfillmentSet = await fulfillmentModuleService.createFulfillmentSets({
     name: "European Warehouse delivery",
-    type: "delivery",
+    type: "shipping",
     service_zones: [
       {
         name: "Europe",

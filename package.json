@@ -19,8 +19,10 @@
     "dev": "medusa develop"
   },
   "dependencies": {
+    "@medusajs/admin-sdk": "preview",
     "@medusajs/api-key": "preview",
     "@medusajs/auth": "preview",
+    "@medusajs/auth-emailpass": "preview",
     "@medusajs/cache-inmemory": "preview",
     "@medusajs/cart": "preview",
     "@medusajs/currency": "preview",
@@ -46,7 +48,8 @@
     "@medusajs/tax": "preview",
     "@medusajs/user": "preview",
     "@medusajs/workflow-engine-inmemory": "preview",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
     "@medusajs/medusa-cli": "preview",
@@ -65,5 +68,15 @@
   },
   "engines": {
     "node": ">=20"
+  },
+  "resolutions": {
+    "@medusajs/admin-bundler": "file:/Users/kasperkristensen/work/medusa/packages/admin/admin-bundler",
+    "@medusajs/admin-sdk": "file:/Users/kasperkristensen/work/medusa/packages/admin/admin-sdk",
+    "@medusajs/admin-shared": "file:/Users/kasperkristensen/work/medusa/packages/admin/admin-shared",
+    "@medusajs/admin-vite-plugin": "file:/Users/kasperkristensen/work/medusa/packages/admin/admin-vite-plugin",
+    "@medusajs/dashboard": "file:/Users/kasperkristensen/work/medusa/packages/admin/dashboard",
+    "@medusajs/ui": "file:/Users/kasperkristensen/work/medusa/packages/design-system/ui",
+    "@medusajs/icons": "file:/Users/kasperkristensen/work/medusa/packages/design-system/icons",
+    "@medusajs/ui-preset": "file:/Users/kasperkristensen/work/medusa/packages/design-system/ui-preset"
   }
 }
